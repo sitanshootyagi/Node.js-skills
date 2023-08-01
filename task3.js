@@ -6,10 +6,10 @@ fs.readFile(fileName, 'utf8', (err, data) => {
       console.error(`Error reading ${fileName}: ${err.message}`)
       return;
     }
-    console.log(data);
+    console.log("Input string=",data);
     const words = data.trim().split(/\s+/);
     const wordCount = words.length;
-    console.log(wordCount);
+    console.log("Total word=",wordCount);
 })
     
 
